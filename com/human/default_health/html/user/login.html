@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>로그인 페이지</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="../../css/user/login.css">
+
+    </head>
+
+    <body>
+
+        <!-- 로그인 폼 -->
+        <form action="#" method="get" id="loginForm" class="loginForm">
+
+            <h1>로그인</h1>
+
+            <div class="loginDiv">
+
+                <!-- 입력 받을 값 -->
+                <input type="text" id="loginId" name="loginId" placeholder="아이디" minlength="8" maxlength="12"> <br>
+                <input type="password" id="loginPwd" name="loginPwd" placeholder="비밀번호" minlength="12" maxlength="18"> <br>
+                <br>
+
+                <input type="checkbox">로그인 상태 유지
+
+                <pre></pre>
+
+                <!-- 로그인 버튼 -->
+                <!-- 버튼을 누를 시 로그인 체크 함수 호출 -->
+                <button type="button" id="loginButton" class="loginButton" name="loginButton" onclick="login();">
+                    로그인
+                </button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+            </div>
+
+        </form>
+
+        <!-- 아이디 찾기 폼 -->
+        <form action="#" method="get" id="searchId" class="searchId">
+            <h1>아이디 찾기</h1>
+            <div>
+                <input type="text" id="searchLoginId" name="searchLoginId" placeholder="아이디" minlength="8" maxlength="12"> <br>
+                <input type="text" id="searchSno" name="searchSno" placeholder="주민등록번호" minlength="12" maxlength="18"> <br>
+                <pre></pre>
+                <button type="button" id="searchId" onclick="searchId()">아이디 찾기</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+            </div>
+        </form>
+
+        <form action="#" id="idList" method="get">
+            <h1>아이디 목록</h1>
+            <div>
+
+                회원 아이디 :
+                <br>
+                가입 일자 :
+
+            </div>
+        </form>
+
+        <!-- 비밀번호 재설정 폼 -->
+        <form action="#"method="get" id="changePwd" class="changePwd">
+            <h1>비밀번호 찾기</h1>
+            <div>
+
+                <input type="text" id="userName" name="userName" placeholder="이름" minlength="8" maxlength="12"> <br>
+                <input type="text" id="userSno" name="userSno" placeholder="주민등록번호" minlength="12" maxlength="18"> <br>
+                <input type="text" id="userId" name="userId" placeholder="아이디" minlength="12" maxlength="18"> <br>
+                <pre></pre>
+                <button type="button" class="searchId" onclick="changePwd()">확인</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+
+            </div>
+        </form>
+
+        <form action="#" id="changePwdSend" method="get">
+            <h1>비밀번호 재설정</h1>
+            <div>
+
+                회원 아이디 :
+                <br>
+                <input type="newChangePwd" id="newChangePwd" placeholder="새 비밀번호">
+                <input type="newPasswordConfirm" id="newPasswordConfirm" placeholder="새 비밀번호 확인">
+                <pre></pre>
+                <button type="button" onclick="newPwd()">재설정 하기</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+            </div>
+        </form>
+
+        <!-- 회원 가입 폼 -->
+        <form action="#" method="get" id="joinUser" class="joinUser">
+            <h1>회원가입</h1>
+            <div class="joinDiv">
+
+                <div class="idAndPw">
+                    <input type="text" id="joinId" name="joinId" placeholder="아이디" minlength="8" maxlength="12"> <br>
+                    <input type="password" id="joinPwd" name="joinPwd" placeholder="비밀번호" minlength="12" maxlength="18">
+                    <br>
+                    <input type="password" id="joinConfirm" name="joinConfirm" placeholder="비밀번호 확인" minlength="12"
+                        maxlength="18">
+                    <br>
+                </div>
+
+                <pre></pre>
+
+                <div class="nameAndBirth">
+                    <input type="text" id="joinName" name="joinName" placeholder="이름" minlength="8" maxlength="12"> <br>
+                    <input type="text" id="joinSno" name="joinSno" placeholder="주민등록번호" minlength="12" maxlength="18"> <br>
+                    <br>
+                    <input id="joinSex" name="sex" type="radio">남자
+                    <input id="joinSex" name="sex" type="radio" >여자
+                </div>
+
+                <pre></pre>
+
+                <div class="phoneNo">
+
+                    <input type="text" id="joinPhoneNo" placeholder="전화번호">
+
+                </div>
+
+                <pre></pre>
+
+                <div>
+                    <input type="radio" id="checkbox" name="checkbox" onclick="showPopup()">
+                    <button type="button" id="agreement" class="agreement" name="agreement"
+                        onclick="showPopup()">약관</button>
+                    </input>
+                    <br>
+                    <button type="button" class="join" onclick="joinCheck()">회원가입</button>
+                    <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+                    
+                </div>
+
+        </form>
+
+        <!-- JQuery를 사용하기 위함 -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../../js/login.js"></script>
+        <script src="../../js/goPage.js"></script>
+    </body>
+
+</html>

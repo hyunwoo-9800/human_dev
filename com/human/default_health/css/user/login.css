@@ -1,0 +1,55 @@
+/* 로그인 페이지 css */
+
+form {
+    margin: 0 auto;
+    margin-left: 300px;
+    padding: 250px;
+    width: auto;
+}
+
+form
+#loginId,
+#loginPwd,
+#loginButton,
+#searchLoginId,
+#searchSno,
+#searchId,
+#newChangePwd,
+#newPasswordConfirm,
+#userSno,
+#userId,
+#name,
+#sno,
+#phoneNo,
+#userName,
+#password,
+#passwordConfirm,
+#joinId,
+#joinPwd,
+#joinConfirm,
+#joinName,
+#joinSno,
+#joinPhoneNo,
+#backBtn
+{
+    width: 475px;
+    height: 60px;
+}
+
+#agreement {
+    border: none;
+    width: 100px;
+    background-color: white;
+}
+
+input {
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    width: 485px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+}

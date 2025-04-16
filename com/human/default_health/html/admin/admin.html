@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>관리자 페이지</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../../css/common/header.css">
+    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 0;
+            margin: 0 auto;
+            width: 1300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            background-clip: padding-box;
+            scroll-snap-align: start;
+        }
+
+        th,
+        td {
+            padding: 0.6rem;
+            min-width: 6rem;
+            text-align: left;
+            margin: 0;
+        }
+
+
+        thead th.pin {
+            left: 0;
+            z-index: 1001;
+            border-left: 0;
+        }
+
+
+        tbody {
+            z-index: 10;
+            position: relative;
+        }
+
+        tbody th {
+            position: sticky;
+            left: 0;
+        }
+
+        thead th,
+        tbody th {
+            background-color: #f8f8f8;
+        }
+
+        select {
+            border: none;
+            width: 170px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include-path="../includes/header.html"></div>
+    <div data-include-path="../includes/backgroundHeader.html"></div>
+
+    <div class="tabs">
+
+        <input id="userM" type="radio" name="tabItem" checked>
+        <label class="tabItem" for="userM">회원관리</label>
+
+        <input id="exM" type="radio" name="tabItem">
+        <label class="tabItem" for="exM">운동법</label>
+
+        <input id="adM" type="radio" name="tabItem">
+        <label class="tabItem" for="adM">배너광고</label>
+
+        <input id="healthM" type="radio" name="tabItem">
+        <label class="tabItem" for="healthM">건강보조식품</label>
+
+        <div class="tabContent" id="userMContent">
+            <table>
+                <thead>
+                    <tr>
+                        <th> 
+                            <select name="sort" id="sort">
+                                <option value="noSort">번호순</option>
+                                <option value="nameSort">이름순</option>
+                                <option value="dateSort">가입일자</option>
+                            </select>
+                        </th>
+                        <th>번호</th>
+                        <th>아이디</th>
+                        <th>전화번호</th>
+                        <th>휴먼계정 여부</th>
+                        <th>탈퇴여부</th>
+                        <th>가입일자</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>aaa</th>
+                    <th>010-****-1234</th>
+                    <th>X</th>
+                    <th>X</th>
+                    <th>25/04/14</th>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <div class="tabContent" id="exMContent">
+            운동법
+        </div>
+
+        <div class="tabContent" id="adMContent">
+            배너광고
+        </div>
+
+        <div class="tabContent" id="healthMContent">
+            건강보조식품
+        </div>
+
+    </div>
+
+</body>
+<script src="../../js/headerImport.js"></script>
+<script src="../../js/goPageAdmin.js"></script>
+
+</html>

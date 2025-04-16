@@ -6,8 +6,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>header</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/header.css">
 </head>
 
 <body>
@@ -16,7 +14,9 @@
         <div class="headerContainer">
 
             <h1>
-                <button class="headLogo" onclick="goMain()"><img src="../images/testimage.png" alt="로고"></button>
+                <button class="headLogo" onclick="goMain()">
+                    <img alt="로고">
+                </button>
             </h1>
 
             <!-- nav 태그 -->
@@ -43,7 +43,7 @@
             </nav>
             <!-- nav 끝 -->
 
-            <button id="loginBtn">로그인</button>
+            <button id="loginBtn" onclick="goLogin()">로그인</button>
 
         </div>
         <!-- container div 끝 -->
