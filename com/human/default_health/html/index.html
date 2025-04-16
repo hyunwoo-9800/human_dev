@@ -12,14 +12,15 @@
 =======
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/header.css">
-    <link rel="stylesheet" href="../css/common/backgroundHeader.css">
 </head>
 >>>>>>> 233aa386419af921bef3bfc6555ed893b980f900
 
   <body>
     <div data-include-path="./includes/header.html"></div>
 
+<<<<<<< Updated upstream
     <!-- 헤더 영역과 띄우기 위해 추가 -->
     <div data-include-path="./includes/backgroundHeader.html"></div>
     <div class="parent">
@@ -30,6 +31,35 @@
               <div class="slideInner">
                 <div class="slider" role="group" aria-label="1/5">
                   <img src="../images/aboutMe.JPG" alt="첫 번째 광고" />
+=======
+    <div class='parent'>
+        <div class='child'>
+            <section id="bannerAd">
+                <div class="adSlide">
+                    <div class="imgSlide">
+                        <div class="slideInner">
+                            <div class="slider" role="group" aria-label="1/5">
+                                <img src="../images/aboutMe.JPG" alt="첫 번째 광고">
+                            </div>
+                            <div class="slider" role="group" aria-label="2/5">
+                                <img src="../images/portfolio.JPG" alt="두 번째 광고">
+                            </div>
+                            <div class="slider" role="group" aria-label="3/5">
+                                <img src="../images/aboutMe.JPG" alt="세 번째 광고">
+                            </div>
+                            <div class="slider" role="group" aria-label="4/5">
+                                <img src="../images/portfolio.JPG" alt="네 번째 광고">
+                            </div>
+                            <div class="slider" role="group" aria-label="5/5">
+                                <img src="../images/aboutMe.JPG" alt="다섯 번째 광고">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideBtn">
+                        <a href="#" class="prev" role="button"><img src="../images/lefttriangle.png"></a>
+                        <a href="#" class="next" role="button"><img src="../images/righttriangle.png"></a>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
 <<<<<<< HEAD
                 <div class="slider" role="group" aria-label="2/5">
@@ -41,9 +71,9 @@
         <div class='child'>
             <section id="login">
                 <div id="container">
-                    <div class="loginBtn" onclick="goLogin()">
+                    <button type="button" id="loginBtn" onclick="goLogin()">
                         로 그 인
-                    </div>
+                    </button>
                     <pre></pre>
                     <div class="searchId" onclick="searchId()">아이디 찾기</div>
                     <div class="searchPw" onclick="searchPw()">비밀번호 찾기</div>

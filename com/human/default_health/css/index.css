@@ -31,14 +31,39 @@
 
 @media(max-width : 800px) {
     .imgSlide {
-        width: 400px;
+        margin-top: 300px;
+        width: 350px;
         height: 250px;
     }
 
     .slider {
-        width: 400px;
+        width: 350px;
         height: 250px;
     }
+
+    .slideBtn a {
+        /* position: absolute; */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        transition: all 0.2s;
+        display: block;
+        color: black;
+    }
+    
+    .slideBtn a.prev {
+        margin-top: -25px;
+        margin-left: 370px;
+    }
+    
+    .slideBtn a.next {
+        margin-top: -50px;
+        margin-left: 370px;
+    }
+    
 }
 
 .slideBtn a {
@@ -70,13 +95,23 @@
     grid-gap: 240px;
 }
 
-#login .loginBtn {
-    margin: 10px;
-    padding: 10px;
+#loginBtn {
+    display: inline-block;
     width: 300px;
-    border: solid black;
-
+    padding: 0.5em 1em;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
 }
+
+#loginBtn:hover {
+    background-color: #005fa3;
+  }
+  
 
 #container {
     text-align: center;

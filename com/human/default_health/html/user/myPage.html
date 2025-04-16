@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="p1.css"> -->
     <link rel="stylesheet" href="../../css/user/myPage.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
     <link rel="stylesheet" href="../../css/common/header.css">
-    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
     <title>마이페이지</title>
 </head>
 
 <body>
 
     <div data-include-path="../includes/header.html"></div>
-    <div data-include-path="../includes/backgroundHeader.html"></div>
-    
+
     <div class="section" id="mypage-container">
         <h1>마이페이지</h1>
         <!-- 프로필 영역 -->
@@ -32,11 +30,8 @@
             </div>
         </div>
 
-
-
-
         <!-- 운동 선택 -->
-        <div class="section" id="section exercise">
+        <div class="section" id="section-exercise">
             <h2>운동 선택</h2>
             <label for="exercise-select">근력운동</label>
             <select id="muscle-exercise">
@@ -121,22 +116,15 @@
             </div>
         </div>
 
-
-
-
-
-
         <!-- 건강 정보 -->
         <div class="section" id="section health-info">
             <h2>건강 정보</h2>
             <p>나이: <strong>39세</strong></p>
             <p>성별: <strong>남성</strong></p>
             <p>병력: <strong>역류성식도염</strong></p>
-            <canvas id="chart" width="400" heigth="200"></canvas>
+            <canvas id="chart" width="400" height="200"></canvas>
         </div>
     </div>
-
-
 
     <script src="../../js/headerImport.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

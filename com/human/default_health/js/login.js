@@ -4,16 +4,16 @@
 var urlValue = window.location.search;
 
 if (urlValue == "?login") {
-    $("#searchId").hide();
-    $("#idList").hide();
-    $("#joinUser").hide();
-    $("#changePwd").hide();
-    $("#changePwdSend").hide();
-    $("#joinUser").hide();
+    $(".searchId").hide();
+    $(".idList").hide();
+    $(".joinUser").hide();
+    $(".changePwd").hide();
+    $(".changePwdSend").hide();
+    $(".joinUser").hide();
 }
 
 if (urlValue == "?searchId") {
-    $("#loginForm").hide();
+    $(".loginForm").hide();
     $("#idList").hide();
     $("#joinUser").hide();
     $("#changePwd").hide();
@@ -116,7 +116,6 @@ function newPwd() {
 
 // 아이디 찾기용
 function searchId() {
-
     // id값으로 입력값을 얻어와서 각각의 변수에 저장
     var searchLoginId = document.getElementById("searchLoginId").value;
     var searchSno = document.getElementById("searchSno").value;
@@ -277,6 +276,12 @@ function joinCheck() {
     if (check1 && check2 && check2 && check3 && check4 && check5 && check6 && check7 && check8 && check9) {
         location.href = '../index.html';
     }
+
+}
+
+function goBack() {
+
+    history.back();
 
 }
 // 로그인 페이지 js 끝
