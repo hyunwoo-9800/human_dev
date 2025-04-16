@@ -7,18 +7,15 @@
     <title>헬스 커뮤니티</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/header.css">
-    <link rel="stylesheet" href="../css/common/backgroundHeader.css">
 </head>
 
 <body>
     <div data-include-path="./includes/header.html"></div>
 
-    <!-- 헤더 영역과 띄우기 위해 추가 -->
-    <div data-include-path="./includes/backgroundHeader.html"></div>
     <div class='parent'>
         <div class='child'>
-
             <section id="bannerAd">
                 <div class="adSlide">
                     <div class="imgSlide">
@@ -51,9 +48,9 @@
         <div class='child'>
             <section id="login">
                 <div id="container">
-                    <div class="loginBtn" onclick="goLogin()">
+                    <button type="button" id="loginBtn" onclick="goLogin()">
                         로 그 인
-                    </div>
+                    </button>
                     <pre></pre>
                     <div class="searchId" onclick="searchId()">아이디 찾기</div>
                     <div class="searchPw" onclick="searchPw()">비밀번호 찾기</div>
