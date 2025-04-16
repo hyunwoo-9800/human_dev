@@ -14,39 +14,39 @@ if (urlValue == "?login") {
 
 if (urlValue == "?searchId") {
     $(".loginForm").hide();
-    $("#idList").hide();
-    $("#joinUser").hide();
-    $("#changePwd").hide();
-    $("#changePwdSend").hide();
-    $("#joinUser").hide();
+    $(".idList").hide();
+    $(".joinUser").hide();
+    $(".changePwd").hide();
+    $(".changePwdSend").hide();
+    $(".joinUser").hide();
 }
 
 if (urlValue == "?searchPw") {
 
-    $("#loginForm").hide();
-    $("#searchId").hide();
-    $("#idList").hide();
-    $("#joinUser").hide();
+    $(".loginForm").hide();
+    $(".searchId").hide();
+    $(".idList").hide();
+    $(".joinUser").hide();
     //$("#changePwd").hide();
-    $("#changePwdSend").hide();
-    $("#joinUser").hide();
+    $(".changePwdSend").hide();
+    $(".joinUser").hide();
 
 
 }
 
 if (urlValue == "?goJoin") {
-    $("#loginForm").hide();
-    $("#searchId").hide();
-    $("#idList").hide();
-    $("#changePwd").hide();
-    $("#changePwdSend").hide();
+    $(".loginForm").hide();
+    $(".searchId").hide();
+    $(".idList").hide();
+    $(".changePwd").hide();
+    $(".changePwdSend").hide();
 }
 
 // 비밀번호 찾기용
 function changePwd() {
     var userName = document.getElementById("userName").value;
     var userSno = document.getElementById("userSno").value;
-    var userId = document.getElementById("userId").value;
+    var searchPwdId = document.getElementById("searchPwdId").value;
 
     var check1 = false;
     var check2 = false;
@@ -67,7 +67,7 @@ function changePwd() {
         check2 = true;
     }
 
-    if (userId == null || userId == "") {
+    if (searchPwdId == null || searchPwdId == "") {
         alert("아이디를 입력해주세요.");
         return false;
     } else {
@@ -139,8 +139,8 @@ function searchId() {
 
     // 이메일 형식이며, 패스워드가 입력되어 있다면 문구를 출력 후 페이지 이동
     if (check1 && check2) {
-        $("#searchId").hide();
-        $("#idList").show();
+        $(".searchId").hide();
+        $(".idList").show();
     } 
 
 }
@@ -148,7 +148,7 @@ function searchId() {
 // 약관 동의 팝업 함수
 function showPopup() {
     window.open("./agreement.html", "a", "width=400, height=300, left=100, top=50");
-    var radioCheck = document.getElementById("checkbox");
+    var radioCheck = document.getElementById("agreementCheck");
     radioCheck.checked = true;
 }
 
@@ -156,19 +156,19 @@ function showPopup() {
 function login() {
 
     // id값으로 입력값을 얻어와서 각각의 변수에 저장
-    var loginId = document.getElementById("loginId").value;
-    var loginPwd = document.getElementById("loginPwd").value;
+    var userid = document.getElementById("userid").value;
+    var password = document.getElementById("password").value;
     var check1 = false;
     var check2 = false;
     // 입력체크 시작
-    if (loginId == null || loginId == "") {
+    if (userid == null || userid == "") {
         alert("아이디를 입력해주세요.");
         return false;
     } else {
         check1 = true;
     }
 
-    if (loginPwd == null || loginPwd == "") {
+    if (password == null || password == "") {
         alert("비밀번호를 입력해주세요.");
         return false;
     } else {
@@ -177,7 +177,7 @@ function login() {
 
     // 이메일 형식이며, 패스워드가 입력되어 있다면 문구를 출력 후 페이지 이동
     if (check1 && check2) {
-        alert(loginId + "님 환영합니다!");
+        alert(userid + "님 환영합니다!");
         location.href = '../index.html';
         return true;
     }
@@ -196,7 +196,7 @@ function joinCheck() {
     var joinSex = document.getElementById("joinSex").value;
     var joinPhoneNo = document.getElementById("joinPhoneNo").value;
     var joinSex = $('input[name=sex]').is(":checked");
-    var checkbox = $('input[name=checkbox]').is(":checked");
+    var checkbox = $('input[name=agreementCheck]').is(":checked");
 
     var check1 = false;
     var check2 = false;
@@ -236,7 +236,7 @@ function joinCheck() {
     }
 
     if (joinName == null || joinName == "") {
-        alert("비밀번호를 입력해주세요.");
+        alert("이름을 입력해주세요.");
         return false;
     } else {
         check4 = true;

@@ -12,7 +12,7 @@
 
 <body>
     <!-- 로그인 폼 -->
-    <main class="centered">
+
         <form action="#" method="get" id="loginForm" class="loginForm">
             <h2>로그인</h2>
             <label for="userid">아이디</label>
@@ -26,13 +26,13 @@
                 로그인 상태 유지
             </label>
 
-            <button type="submit" class="button">로그인</button>
+            <button type="button" class="button" onclick="login();">로그인</button>
             <button type="button" class="button" onclick="goBack();">뒤로가기</button>
         </form>
-    </main>
+
 
     <!-- 아이디 찾기 폼 -->
-    <main class="centered">
+
         <form action="#" method="get" id="searchId" class="searchId">
             <h2>아이디 찾기</h2>
             <label for="searchLoginId">아이디</label>
@@ -44,28 +44,28 @@
             <button type="button" class="button" onclick="searchId()">아이디 찾기</button>
             <button type="button" class="button" onclick="goBack();">뒤로가기</button>
         </form>
-    </main>
-    <main class="centered">
+
+
         <form action="#" id="idList" class="idList" method="get">
             <h2>아이디 목록</h2>
             <p>회원 아이디 :</p>
             <p>가입 일자 :</p>
         </form>
-    </main>
+
 
     <!-- 비밀번호 재설정 폼 -->
-    <main class="centered">
+
         <form action="#" method="get" id="changePwd" class="changePwd">
             <h2>비밀번호 찾기</h2>
             <input type="text" id="userName" name="userName" placeholder="이름" minlength="8" maxlength="12">
             <input type="text" id="userSno" name="userSno" placeholder="주민등록번호" minlength="12" maxlength="18">
-            <input type="text" id="userId" name="userId" placeholder="아이디" minlength="12" maxlength="18">
+            <input type="text" id="searchPwdId" name="searchPwdId" placeholder="아이디" minlength="12" maxlength="18">
 
             <button type="button" class="button" onclick="changePwd()">확인</button>
             <button type="button" class="button" onclick="goBack();">뒤로가기</button>
         </form>
-    </main>
-    <main class="centered">
+
+
         <form action="#" id="changePwdSend" class="changePwdSend" method="get">
             <h2>비밀번호 재설정</h2>
             <p>회원 아이디 :</p>
@@ -75,9 +75,9 @@
             <button type="button" class="button" onclick="newPwd()">재설정 하기</button>
             <button type="button" class="button" onclick="goBack();">뒤로가기</button>
         </form>
-    </main>
+
     <!-- 회원 가입 폼 -->
-    <main class="centered">
+
         <form action="#" method="get" id="joinUser" class="joinUser">
             <h2>회원가입</h2>
             <input type="text" id="joinId" name="joinId" placeholder="아이디" minlength="8" maxlength="12">
@@ -88,20 +88,20 @@
             <input type="text" id="joinName" name="joinName" placeholder="이름" minlength="8" maxlength="12">
             <input type="text" id="joinSno" name="joinSno" placeholder="주민등록번호" minlength="12" maxlength="18">
 
-            <label><input id="joinSexM" name="sex" type="radio">남자</label>
-            <label><input id="joinSexF" name="sex" type="radio">여자</label>
+            <label><input id="joinSex" name="sex" type="radio">남자</label>
+            <label><input id="joinSex" name="sex" type="radio">여자</label>
 
             <input type="text" id="joinPhoneNo" placeholder="전화번호">
 
             <label class="checkbox-label">
-                <input type="radio" id="agreementCheck" name="checkbox" onclick="showPopup()">
+                <input type="radio" id="agreementCheck" name="agreementCheck" onclick="showPopup()">
                 약관 동의
             </label>
 
-            <button type="button" class="button join" onclick="joinCheck()">회원가입</button>
+            <button type="button" class="button" onclick="joinCheck();">회원가입</button>
             <button type="button" class="button" onclick="goBack();">뒤로가기</button>
         </form>
-    </main>
+
     <!-- JQuery를 사용하기 위함 -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="../../js/login.js"></script>
