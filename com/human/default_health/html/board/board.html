@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>board</title>
+    <link rel="stylesheet" href="../../css/board.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/backgroundHeader.css" />
+  </head>
+  <body>
+    <div data-include-path="../includes/header.html"></div>
+
+    <!-- 헤더 영역과 띄우기 위해 추가 -->
+    <div data-include-path="../includes/backgroundHeader.html"></div>
+
+    <div class="contain">
+      <header>
+        <form action="#">
+          <input id="login" type="button" value="로그인" />
+        </form>
+
+        <div class="searcharea">
+          <form action="#">
+            <select name="category">
+              <option value="1">조회 수</option>
+              <option value="2">등록일</option>
+              <option value="3">글쓴이</option>
+              <option value="4">제목</option>
+            </select>
+            <input type="search" placeholder="내용을 입력하세요." />
+          </form>
+
+          <form action="#">
+            <input type="button" value="검색" />
+          </form>
+        </div>
+
+        <form action="#">
+          <input class="write" type="button" value="글쓰기" />
+        </form>
+      </header>
+    </div>
+
+    <script src="../../js/headerImport.js"></script>
+  </body>
+</html>
