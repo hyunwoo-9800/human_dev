@@ -177,9 +177,14 @@ function login() {
 
     // 이메일 형식이며, 패스워드가 입력되어 있다면 문구를 출력 후 페이지 이동
     if (check1 && check2) {
-        alert(userid + "님 환영합니다!");
-        location.href = '../index.html';
-        return true;
+        if (userid == "user") {
+            alert(userid + "님 환영합니다!");
+            location.href = '../index_user.html';
+            return true;
+        } else if(userid == "admin") {
+            location.href = '../index_admin.html';
+            return true;
+        }
     }
 
 }
@@ -279,9 +284,28 @@ function joinCheck() {
 
 }
 
+// 뒤로가기
 function goBack() {
 
     history.back();
 
+}
+
+// 마이페이지로
+function goMypage() {
+    location.href = "../html/user/myPage.html";
+}
+
+// 관리자페이지로
+function goAdminPage() {
+    location.href = "../html/admin/admin.html";
+}
+
+// 로그아웃
+function logOut() {
+    if (confirm("로그아웃 하시겠습니까?")) {
+        alert("로그아웃 하였습니다.");
+        location.href = "./index.html";
+    }
 }
 // 로그인 페이지 js 끝

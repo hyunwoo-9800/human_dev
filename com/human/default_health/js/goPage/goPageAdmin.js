@@ -182,3 +182,21 @@ function deleteRow(button) {
         row.remove();                                   // 행 삭제
     }
 }
+
+// 관리자페이지에서 메인화면으로
+function goMainAdmin() {
+    location.href = "../index_admin.html";
+}
+
+// 관리자페이지에서 관리자페이지로
+function goAdminPage() {
+    location.href = "./admin.html";
+}
+
+// 로그아웃
+function logOut() {
+    if (confirm("로그아웃 하시겠습니까?")) {
+        alert("로그아웃 하였습니다.");
+        location.href = "../index.html";
+    }
+}

@@ -23,8 +23,6 @@ prev.addEventListener("click", () => {
     gotoSlider(prevIndex);
 });
 
-//오른쪽 버튼 클릭
-//01234
 next.addEventListener("click", () => {
     let nextIndex = (currentIndex + 1) % sliderCount;
     gotoSlider(nextIndex);

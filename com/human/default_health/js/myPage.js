@@ -6,15 +6,19 @@ function changePhoto() {
     alert('프로필 사진이 삭제되었습니다.');
   }
   
-  function logOut() {
-    alert('로그아웃 되었습니다.');
+ // 로그아웃
+function logOut() {
+  if (confirm("로그아웃 하시겠습니까?")) {
+      alert("로그아웃 하였습니다.");
+      location.href = "../index.html";
   }
-  
+}
   function confirmLeave() {
     if (confirm('정말 탈퇴하시겠습니까?')) {
       alert('회원 탈퇴가 완료되었습니다.');
     }
   }
+  
   function showCalories() {
     const time = document.getElementById('time').value;
     const goal = document.getElementById('goal').value;
@@ -121,6 +125,25 @@ function changePhoto() {
     location.href = "../user/login.html?login";
   
   }
+  
+  // 마이페이지에서 메인화면으로
+  function goMainUser() {
+  
+    location.href = "../index_user.html";
+  
+  }
+
+  // 마이페이지에서 메인화면으로
+  function goMainUser() {
+  
+    location.href = "../index_user.html";
+  
+  }
+
+  // 마이페이지로
+function goMypage() {
+  location.href = "../user/myPage.html";
+}
   
 
   
