@@ -13,7 +13,6 @@
             }
         .goods{
             width: 1200px;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,6 +27,8 @@
             width: 700px;
             height: 400px;
             border: 1px solid black;
+            position: relative;
+            left:100px;
         }
         .reviewWrite{
             width:1200px;
@@ -47,11 +48,6 @@
         .reviewRead{
             margin: 50px;
             width:1200px;
-            border: 1px solid black;
-        }
-        .reviewRead div{
-            display: flex;
-            margin: 20px;
         }
         .reviewCustomer{
             width:200px;
@@ -60,7 +56,7 @@
             width:700px;
         }
         .reviewStar{
-            width:150px;
+            width:200px;
         }
         footer div ul{
             display: flex;
@@ -74,11 +70,39 @@
             font-family: "Font Awesome 5 Free"; 
             font-weight:900; 
         }
+        .star{
+          width:200px; 
+          height:45px; 
+          margin:20px;
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900; 
+          color: #FFD43B;
+        }
+        .star option{
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900;
+          color: #FFD43B;
+        }
+        table tr th{
+            background-color: aqua;
+        }
+        table tr td button{
+            border: none;
+            width:80px;
+            background:none;
+            cursor: pointer;
+        }
+        table tr td:nth-of-type(3){
+            letter-spacing: 15px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/common/header.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
 </head>
    
 <body>
+    <div data-include-path="../includes/header.html"></div>
     <main>
         <div>
             <div class="goods">
@@ -96,7 +120,7 @@
                 </div>
 
                 <div class="reviewRead">
-                    <div>
+                    <!-- <div>
                         <div class="reviewCustomer">작성자</div>
                         <div class="reviewContent">리뷰내용</div>
                         <div class="reviewStar">별점</div>
@@ -122,7 +146,47 @@
                         <div class="reviewContent">너무 달아요.</div>
                         <div class="reviewStar">별점</div>
                         <div>신고</div>
-                    </div>
+                    </div> -->
+                    
+                        <table class="table">
+                            <tr>
+                                <th class="reviewCustomer">작성자</th>
+                                <th class="reviewContent">리뷰내용</th>
+                                <th class="reviewStar">별점</th>
+                                <th>신고</th>
+                            </tr>
+                            <tr>
+                                <td>엄정민</td>
+                                <td>달아요.</td>
+                                <td class="star">&#xf005&#xf005&#xf005&#xf005&#xf005</td>
+                                <td>
+                                    <button>
+                                        <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>엄정민</td>
+                                <td>달아요.</td>
+                                <td class="star">&#xf005</td>
+                                <td>
+                                    <button>
+                                        <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>엄정민</td>
+                                <td>달아요.</td>
+                                <td class="star">&#xf005&#xf005&#xf005</td>
+                                <td>
+                                    <button>
+                                        <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                   
                 </div>
             </div>
         </main>
@@ -139,5 +203,8 @@
                 </ul>
             </div>
         </footer>
+        <script src="../../js/headerImport.js"></script>
+        <script src="../../js/goPage.js"></script>
+        <script src="../../js/index.js"></script>
     </body>
 </html>
