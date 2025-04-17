@@ -10,6 +10,26 @@ function goLogin() {
     window.location.href = "../user/login.html?login";
 }
 
+// 운동법 페이지로
+function goEx() {
+    location.href = "../exercise/exMet.html";
+}
+
+// 운동장비 페이지로
+function goEq() {
+    location.href = "../healthcare/equipments.html";
+}
+
+// 보조식품 페이지로
+function goSup() {
+    location.href = "../healthcare/supplements.html";
+}
+
+// 게시판 페이지로
+function goBoard() {
+    location.href = "../board/board.html";
+}
+
 // 관리자 페이지 수정
 function updateCheck() {
     if (confirm("수정하시겠습니까?")) {
@@ -27,6 +47,14 @@ function goReg() {
 // 관리자 페이지(등록)에서 관리자 페이지 메인으로 이동
 function goList() {
     location.href = "../admin/admin.html";
+}
+
+function add() {
+    if (confirm("수정하시겠습니까?")) {
+        alert("수정완료");
+    } else {
+        alert("취소하였습니다.");
+    }
 }
 
 // 운동법 탭 탭 추가용

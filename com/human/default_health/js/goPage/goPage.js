@@ -32,15 +32,20 @@ function goBack() {
 
 // 운동법 페이지로
 function goEx() {
-    location.href = "../html/excercise/exerciseMethodDetailed.html";
+    location.href = "../html/exercise/exMet.html";
 }
 
 // 운동장비 페이지로
 function goEq() {
-    location.href = "../html/healthcare/fitnessEquipment.html";
+    location.href = "../html/healthcare/equipments.html";
 }
 
 // 보조식품 페이지로
 function goSup() {
-    location.href = "./healthcare/healthCareNutritionalSupplements.html";
+    location.href = "./healthcare/supplements.html";
+}
+
+// 게시판 페이지로
+function goBoard() {
+    location.href = "../html/board/board.html";
 }
