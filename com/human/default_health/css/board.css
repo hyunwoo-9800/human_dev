@@ -10,6 +10,7 @@
   margin: 0 auto;
   padding: 10px;
   background: #fff;
+  background-color: red;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -18,7 +19,7 @@
 }
 
 .userSearch input[type='search'] {
-  width: 600px;
+  width: 6000px;
   margin: 0 10px 0 10px;
 }
 
