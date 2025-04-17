@@ -1,139 +1,140 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/healthcare/fitnessEquipment.css">
+        <link rel="stylesheet" href="../../css/common/header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>운동보조장비판매</title>
+    </head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../../css/healthcare/fitnessEquipment.css">
-    <link rel="stylesheet" href="../../css/common/header.css">
-    <!-- <link rel="stylesheet" href="../../css/common/common.css"> -->
-    
+    <body>
+        <!-- 헤더 영역 -->
+        <div data-include-path="../includes/header.html"></div>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>운동보조장비판매</title>
- tips
-</head>
+        <section id="excerciseSub">
 
-<body>
+            <!-- 검색 영역 -->
+            <div class="search-bar">
+                <select name="ExerciseAreaSelect" id="ExerciseArea">
+                    <option value="인기상품">분류 선택</option>
+                    <option value="전체보기">전체보기</option>
+                    <option value="무릎보호대">무릎보호대</option>
+                    <option value="벨트">벨트</option>
+                    <option value="손목보호대">손목보호대</option>
+                    <option value="스트랩">스트랩</option>
+                    <option value="팔꿈치보호대">팔꿈치보호대</option>
+                    <option value="헬스장갑">헬스장갑</option>
+                    <option value="기타">기타</option>
+                </select>
+                <input type="text" placeholder="장비 이름 검색창">
+                <button>검색</button>
+            </div>
 
-    <div data-include-path="../includes/header.html"></div>
+            <!-- 상품 영역 -->
+            <div class="product-container">
+                <!-- 1행 -->
+                <div class="product-grid">
+                    <div class="product-card">
 
+                        <a href="#">
+                            <img src="../../images/fitnessEquipment.jpg" onclick="goDetail();" alt="상품이미지1">
+                        </a>
+                        <div class="info">
+                            <h3>상품명 1</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../images/fitnessEquipment.jpg" alt="상품이미지2">
+                        <div class="info">
+                            <h3>상품명 2</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../images/fitnessEquipment.jpg" alt="상품이미지3">
+                        <div class="info">
+                            <h3>상품명 3</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="excerciseSub">
-        <div class="search-bar">
-            <select name="ExerciseAreaSelect" id="ExerciseArea">
-                <option value="인기상품">분류 선택</option>
-                <option value="전체보기">전체보기</option>
-                <option value="무릎보호대">무릎보호대</option>
-                <option value="벨트">벨트</option>
-                <option value="손목보호대">손목보호대</option>
-                <option value="스트랩">스트랩</option>
-                <option value="팔꿈치보호대">팔꿈치보호대</option>
-                <option value="헬스장갑">헬스장갑</option>
-                <option value="기타">기타</option>
-            </select>
-            <input type="text" placeholder="장비 이름 검색창">
-            <button>검색</button>
-        </div>
-
-        <div class="product-container">
-            <!-- 1행 -->
-            <div class="product-grid">
-                <div class="product-card">
-                    
-                    <a href="www.naver.com"><img src="../../images/fitnessEquipment.jpg" alt="상품이미지1"></a>
-                    <div class="info">
-                        <h3>상품명 1</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
+                <!-- 2행 -->
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../images/fitnessEquipment.jpg" alt="상품이미지4">
+                        <div class="info">
+                            <h3>상품명 4</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../images/fitnessEquipment.jpg" alt="상품이미지5">
+                        <div class="info">
+                            <h3>상품명 5</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../../images/fitnessEquipment.jpg" alt="상품이미지6">
+                        <div class="info">
+                            <h3>상품명 6</h3>
+                            <p>상품 설명</p>
+                            <p class="price">₩19,000</p>
+                            <button class="button">구매하기</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지2">
-                    <div class="info">
-                        <h3>상품명 2</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지3">
-                    <div class="info">
-                        <h3>상품명 3</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
-                    </div>
-                </div>
+            <!-- 상품 영역 끝 -->
+        </section>
+        <!-- 전체 영역 끝 -->
+
+        <!-- 페이징 처리 영역 -->
+        <div class="paging">
+
+            <!-- 이미지 임포트 -->
+            <i class="fa-solid fa-angles-left" id="first_page"></i>
+            <i class="fa-solid fa-angle-left" id="prev_page"></i>
+
+            <div class="pages">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>...(더보기)</span>
             </div>
 
-            <!-- 2행 -->
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지4">
-                    <div class="info">
-                        <h3>상품명 4</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지5">
-                    <div class="info">
-                        <h3>상품명 5</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지6">
-                    <div class="info">
-                        <h3>상품명 6</h3>
-                        <p>상품 설명</p>
-                        <p class="price">₩19,000</p>
-                        <button class="button">구매하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <i class="fa-solid fa-angle-right" id="next_page"></i>
+            <i class="fa-solid fa-angles-right" id="last_page"></i>
 
-    </section>
-    <!-- 페이징 처리 영역 -->
-    <div class="paging">
-
-        <!-- 이미지 임포트 -->
-        <i class="fa-solid fa-angles-left" id="first_page"></i>
-        <i class="fa-solid fa-angle-left" id="prev_page"></i>
-
-        <div class="pages">
-            <span class="active">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>...(더보기)</span>
-        </div>
-
-        <i class="fa-solid fa-angle-right" id="next_page"></i>
-        <i class="fa-solid fa-angles-right" id="last_page"></i>       
-
-</body>
-<script src="../../js/headerImport.js"></script>
+    <script src="../../js/headerImport.js"></script>
+    <script src="../../js/goPageEq.js"></script>
+    </body>
 
 </html>
