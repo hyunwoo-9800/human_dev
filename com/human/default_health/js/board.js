@@ -33,4 +33,7 @@ function goWrite() {
   location.href = '../../html/board/board_write.html';
 }
 
+function goBoard() {
+  location.href = '../../html/board/board.html';
+}
 //버튼 ========================================================
