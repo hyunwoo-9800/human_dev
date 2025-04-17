@@ -56,13 +56,13 @@
 
                         <div class="detailContent" id="chestContent">
 
-                            <table id="exMet" contenteditable="true">
+                            <table id="exMet">
                                 <tr>
-                                    <td contenteditable="false">운동이름</td>
-                                    <td contenteditable="false">이미지</td>
-                                    <td contenteditable="false">상세 설명</td>
-                                    <td contenteditable="false">게시여부</td>
-                                    <td contenteditable="false">삭제</td>
+                                    <td>운동이름</td>
+                                    <td>이미지</td>
+                                    <td>상세 설명</td>
+                                    <td>게시여부</td>
+                                    <td>삭제</td>
                                 </tr>
                                 <tr>
                                     <td><input type="text" placeholder="운동명"></td>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="detailContent" id="backContent">
-                            <table id="exMet" contenteditable="true">
+                            <table id="exMet">
                                 <tr>
                                     <td contenteditable="false">운동이름</td>
                                     <td contenteditable="false">이미지</td>
@@ -398,12 +398,13 @@
                     <i class="fa-solid fa-angles-right" id="last_page"></i>
                 </div>
             </div>
+            <button class="addBtn" type="button" onclick="add();">수정하기</button>
             <button class="listBtn" type="button" onclick="goList();">관리자 페이지 홈으로</button>
         </div>
         <!-- JQuery를 사용하기 위함 -->
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="../../js/headerImport.js"></script>
-        <script src="../../js/goPageAdmin.js"></script>
+        <script src="../../js/goPage/goPageAdmin.js"></script>
     </body>
 
 </html>

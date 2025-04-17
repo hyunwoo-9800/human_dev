@@ -232,7 +232,7 @@
             <!-- 광고 탭 -->
             <div class="tabContent" id="adMContent">
                 <form action="#" method="get">
-                    <table contenteditable="true">
+                    <table>
                         <thead>
                             <tr>
                                 <th>번호</th>
@@ -244,17 +244,17 @@
                                 <th>마감일자</th>
                             </tr>
                         </thead>
-                        <tr>
+                        <tr contenteditable="true">
                             <th>1</th>
                             <th>1번보충제</th>
                             <th>www.naver.com</th>
-                            <th>
+                            <th contenteditable="false">
                                 <select name="" id="">
                                     <option value="O">O</option>
                                     <option value="X">X</option>
                                 </select>
                             </th>
-                            <th>
+                            <th contenteditable="false">
                                 <button type="button" class="button">삭제</button>
                             </th>
                             <th>25/04/14</th>
@@ -290,7 +290,7 @@
             <!-- 보충제, 영양제 탭 -->
             <div class="tabContent" id="healthMContent">
                 <form action="#" method="get">
-                    <table contenteditable="true">
+                    <table>
                         <thead>
                             <tr>
                                 <th>상품 이미지</th>
@@ -300,10 +300,12 @@
                                 <th>게시일자</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <th><input type="file"></th>
+                        <tr contenteditable="true">
+                            <th contenteditable="false">
+                                <input type="file">
+                            </th>
                             <th>상세설명</th>
-                            <th>
+                            <th contenteditable="false">
                                 <select name="" id="">
                                     <option value="O">O</option>
                                     <option value="X">X</option>
@@ -352,10 +354,12 @@
                                 <th>게시일자</th>
                             </tr>
                         </thead>
-                        <tr>
-                            <th><input type="file"></th>
+                        <tr contenteditable="true">
+                            <th contenteditable="false">
+                                <input type="file">
+                            </th>
                             <th>상세설명</th>
-                            <th>
+                            <th contenteditable="false">
                                 <select name="" id="">
                                     <option value="O">O</option>
                                     <option value="X">X</option>
@@ -394,6 +398,6 @@
         </div>
     </body>
     <script src="../../js/headerImport.js"></script>
-    <script src="../../js/goPageAdmin.js"></script>
+    <script src="../../js/goPage/goPageAdmin.js"></script>
 
 </html>
