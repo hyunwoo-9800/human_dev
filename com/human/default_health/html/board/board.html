@@ -5,43 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>board</title>
     <link rel="stylesheet" href="../../css/board.css" />
-    <link rel="stylesheet" href="../../css/header.css" />
-    <link rel="stylesheet" href="../../css/backgroundHeader.css" />
+    <link rel="stylesheet" href="../../css/common/header.css" />
+    <link rel="stylesheet" href="../../css/admin/admin.css" />
+    <!-- <link rel="stylesheet" href="../../css/common/common.css" /> -->
   </head>
   <body>
     <div data-include-path="../includes/header.html"></div>
 
     <!-- 헤더 영역과 띄우기 위해 추가 -->
     <div data-include-path="../includes/backgroundHeader.html"></div>
-
+    <!-- header start----------------------------------------------------------------- -->
     <div class="contain">
-      <header>
-        <form action="#">
-          <input id="login" type="button" value="로그인" />
-        </form>
-
-        <div class="searcharea">
-          <form action="#">
+      <div class="header">
+        <div class="userSearch">
+          <form id="sform" action="#">
             <select name="category">
-              <option value="1">조회 수</option>
-              <option value="2">등록일</option>
-              <option value="3">글쓴이</option>
-              <option value="4">제목</option>
+              <option value="1" selected>제목</option>
+              <option value="2">글쓴이</option>
+              <option value="3">등록일</option>
+              <option value="4">조회 수</option>
             </select>
             <input type="search" placeholder="내용을 입력하세요." />
           </form>
 
           <form action="#">
-            <input type="button" value="검색" />
+            <input class="sButton" type="button" value="검색" />
+          </form>
+
+          <form action="#">
+            <input class="Wbutton" type="button" value="글쓰기" />
           </form>
         </div>
+      </div>
+      <!-- header end-------------------------------------------------------------- -->
 
-        <form action="#">
-          <input class="write" type="button" value="글쓰기" />
-        </form>
-      </header>
+      <div class="main">
+        <table id="board">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">번호</th>
+              <th onclick="sortTable(1)">분류</th>
+              <th>제목</th>
+              <th>글쓴이</th>
+              <th>등록일</th>
+              <th>조회</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td style="color: red">공지</td>
+              <td style="color: red">[중요] 커뮤니티 이용 안내</td>
+              <td>관리자</td>
+              <td>01-01</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td style="color: rgb(179, 179, 10)">문의</td>
+              <td>관리자님 확인 부탁드립니다.</td>
+              <td>name1</td>
+              <td>01-02</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다1.</td>
+              <td>name2</td>
+              <td>01-03</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td style="color: cadetblue">모집</td>
+              <td>오늘 7시 천안 대흥동 천안역에서 런닝 하실 분 구합니다.</td>
+              <td>name3</td>
+              <td>01-04</td>
+              <td>100</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다2.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다3.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다4.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다5.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다6.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>일반</td>
+              <td>공개설정 제목입니다7.</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="paging">
+        <i class="fa-solid fa-angles-left" id="first_page"></i>
+        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+
+        <div class="pages">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>...(더보기)</span>
+        </div>
+
+        <i class="fa-solid fa-angle-right" id="next_page"></i>
+        <i class="fa-solid fa-angles-right" id="last_page"></i>
+      </div>
     </div>
-
+    <script src="../../js/board.js"></script>
     <script src="../../js/headerImport.js"></script>
   </body>
 </html>
