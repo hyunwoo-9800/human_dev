@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_공통상품</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/common/header.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/healthcare/product.css">
+
+</head>
+
+<body>
+    <div data-include-path="../includes/header.html"></div>
+
+    <div class="product-section">
+        <div class="product-box">
+            <div class="product-image">상품 이미지</div>
+            <div class="purchase-info">구매 링크 & 설명</div>
+        </div>
+
+        <h2 class="section-title">고객 리뷰</h2>
+
+        <table class="review-table">
+            <thead>
+                <tr>
+                    <th>작성자</th>
+                    <th>리뷰내용</th>
+                    <th>별점</th>
+                    <th>신고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>작성자1</td>
+                    <td>리뷰 내용</td>
+                    <td>별점</td>
+                    <td><i class="fa fa-bell report-icon"></i></td>
+                </tr>
+                <tr>
+                    <td>작성자2</td>
+                    <td>리뷰 내용</td>
+                    <td>별점</td>
+                    <td><i class="fa fa-bell report-icon"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="button-wrapper">
+            <button class="write-review-btn" onclick="regRiv();">리뷰 작성</button>
+        </div>
+    </div>
+
+    <!-- 페이징 처리 영역 -->
+    <div class="paging">
+
+        <!-- 이미지 임포트 -->
+        <i class="fa-solid fa-angles-left" id="first_page"></i>
+        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+
+        <div class="pages">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>...(더보기)</span>
+        </div>
+
+        <i class="fa-solid fa-angle-right" id="next_page"></i>
+        <i class="fa-solid fa-angles-right" id="last_page"></i>
+
+        <script src="../../js/headerImport.js"></script>
+        <script src="../../js/goPage/goPageHealth.js"></script>
+
+</body>
+
+</html>

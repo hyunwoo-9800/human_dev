@@ -1,0 +1,68 @@
+/* 전체 레이아웃 */
+.product-section {
+    padding: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+}
+
+/* 제품 이미지 & 구매 설명 */
+.product-box {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.product-image,
+.purchase-info {
+    flex: 1;
+    min-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 섹션 제목 */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* 신고 아이콘 */
+.report-icon {
+    color: crimson;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.report-icon:hover {
+    transform: scale(1.2);
+}
+
+/* 리뷰 작성 버튼 */
+.button-wrapper {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.write-review-btn {
+    background-color: #0077cc;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.write-review-btn:hover {
+    background-color: #005fa3;
+}

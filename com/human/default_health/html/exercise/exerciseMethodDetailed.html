@@ -2,29 +2,19 @@
 <html lang="ko">
 
 <head>
-
     <meta charset="UTF-8" />
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link rel="stylesheet" href="../../css/common/header.css">
     <link rel="stylesheet" href="../../css/common/common.css">
-    <link rel="stylesheet" href="../../css/excercise/exerciseMethodDetailed .css">
-
-
-
+    <link rel="stylesheet" href="../../css/exercise/exerciseMethodDetailed.css">
     <title>운동방법 상세페이지</title>
-
 </head>
 
-<head>
-    <div data-include-path="../includes/header.html"></div>
-</head>
-<style>
-
-</style>
 
 <body>
+
+    <div data-include-path="../includes/header.html"></div>
+    
     <!-- 이미지 (GIF 파일 가능) -->
     <div class="excercise-gif">
         <img src="../../images/bench Press.gif" alt="운동 이미지" class="exercise-img">
@@ -64,23 +54,6 @@
     <!-- 뒤로 가기 버튼 -->
     <button type="button" class="button" onclick="goBack();">뒤로 가기</button>
 
+    <script src="../../js/headerImport.js"></script>
+    <script src="../../js/goPage/goPageEx.js"></script>
 </body>
-<script src="../../js/headerImport.js"></script>
-<script>
-    function goBack() {
-        location.href = "../index.html";
-    }
-   
-    function goMain() {
-
-        location.href = "../index.html";
-
-    }
-
-    function goLogin() {
-
-        location.href = "../user/login.html?login";
-        
-
-    }
-</script>
