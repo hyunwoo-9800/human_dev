@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_보조식품</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        main *{
+            display: flex;
+            justify-content: center;
+            width: 1440px;
+            margin: 0;
+            padding: 0;
+        }
+        main ul{
+            list-style:none;
+        }
+        .tabmenu{ 
+            width:1440px; 
+            margin: 0 auto; 
+            position:relative; 
+        }
+        .tabmenu ul{
+            position: relative;
+        }
+        .tabmenu ul li{
+            display: inline-block;
+            width:50%; 
+            float:left;  
+            text-align:center; 
+            background :#f9f9f9;
+            line-height:40px;
+        }
+        .tabmenu label{
+            display:block;
+            width:100%; 
+            height:40px;
+            line-height:40px;
+        }
+        .tabmenu input{ 
+            display:none;
+        }
+        .tabCon{
+            display:none; 
+            width: 100%;
+            padding: 20px;
+            position:absolute; 
+            left:0; top:40px; 
+            box-sizing: border-box; 
+            padding: 0;
+            text-align: left;
+        }
+        .tabmenu input:checked ~ label{
+            background:#ccc;
+        }
+        .tabmenu input:checked ~ .tabCon{
+            display:block;
+        }
+        .classification{
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        width: 100%;
+        border-style: none;
+        }
+        .dropdown{
+        position: relative;
+        display: inline;
+        border-style: none;
+        width: 33.33%;
+        border-style: none;
+      }
+      .dropbtn{
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+      }
+      .dropdown-content{
+        width: 100%;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #f9f9f9;
+       
+      }
+      .dropdown-content a{
+        width: 100%;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover{
+        background-color:  #ececec;
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+      .goodsImage{
+        display: flex;
+        justify-content: center;
+      }
+      .goodsImage div{
+        margin: 20px;
+        border: 1px solid black;
+        width:300px;
+        height: 300px;
+      }
+      .tabmenu footer div {
+        width: 20%;
+      }
+      .tabmenu footer div ul{
+        display: flex;
+        justify-content: center;
+      }
+      .tabmenu footer div ul li{
+        padding:10px;
+        cursor: pointer;
+        background:none;
+      }
+      .icon{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight:900; 
+      }
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <main>
+            <div class="tabmenu">
+                <ul>
+                    <li id="tab1" class="btnCon">
+                        <input type="radio" checked name="tabmenu" id="tabmenu1">
+                        <label for="tabmenu1">단백질 보충제</label>
+                        <div class="tabCon">
+                            <div class="classification">
+                                <div class="dropdown">
+                                  <button class="dropbtn">분류</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">Default</a>
+                                    <a href="#">MostLoved</a>
+                                    <a href="#">Price:low to Hight</a>
+                                    <a href="#">Price:Hight to Low</a>
+                                    <a href="#">A - Z</a>
+                                    <a href="#">Newest arrivals</a>
+                                    <a href="#">Percentage Discount</a>
+                                  </div>
+                                </div>
+                                <div class="dropdown">
+                                  <button class="dropbtn">맛</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">Apple Caramel</a>
+                                    <a href="#">Asian</a>
+                                    <a href="#">Bitter Lemon</a>
+                                    <a href="#">Blue Rasoberry</a>
+                                    <a href="#">Brown Sugar</a>
+                                    <a href="#">Candy</a>
+                                    <a href="#">Caramel Peanut</a>
+                                  </div>
+                                </div>
+                                <div class="dropdown">
+                                  <button class="dropbtn">식단별</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">Default</a>
+                                    <a href="#">MostLoved</a>
+                                    <a href="#">Price:low to Hight</a>
+                                    <a href="#">Price:Hight to Low</a>
+                                    <a href="#">A - Z</a>
+                                    <a href="#">Newest arrivals</a>
+                                    <a href="#">Percentage Discount</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="goodsImage">
+                                  <div>보충제1</div>
+                                  <div>보충제2</div>
+                                  <div>보충제3</div>
+                                  <div>보충제4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="goodsImage">
+                                  <div>보충제5</div>
+                                  <div>보충제6</div>
+                                  <div>보충제7</div>
+                                  <div>보충제8</div>
+                                </div>
+                            </div>
+                            <footer>
+                                <div>
+                                  <ul>
+                                    <li class="icon">&#xf104</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li class="icon">&#xf105</li>
+                                  </ul>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+                    <li id="tab2" class="btnCon">
+                        <input type="radio"  name="tabmenu" id="tabmenu2">
+                        <label for="tabmenu2">영양제</label>
+                        <div class="tabCon">
+                            <div class="classification">
+                                <div class="dropdown">
+                                  <button class="dropbtn">분류</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">Default</a>
+                                    <a href="#">MostLoved</a>
+                                    <a href="#">Price:low to Hight</a>
+                                    <a href="#">Price:Hight to Low</a>
+                                    <a href="#">A - Z</a>
+                                    <a href="#">Newest arrivals</a>
+                                    <a href="#">Percentage Discount</a>
+                                  </div>
+                                </div>
+                                <div class="dropdown">
+                                  <button class="dropbtn">종류</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">종합비타민</a>
+                                    <a href="#">오메가3</a>
+                                    <a href="#">크레아틴</a>
+                                    <a href="#">아미노산</a>
+                                  </div>
+                                </div>
+                                <div class="dropdown">
+                                  <button class="dropbtn">목적별</button>
+                                  <div class="dropdown-content">
+                                    <a href="#">스포츠퍼포먼스</a>
+                                    <a href="#">뼈&건강관절</a>
+                                    <a href="#">다이어트보조제</a>
+                                    <a href="#">웰빙&케어</a>
+                                    <a href="#">남성을 위한 영양제</a>
+                                    <a href="#">여성을 위한 영양제</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="goodsImage">
+                                  <div>영양제1</div>
+                                  <div>영양제2</div>
+                                  <div>영양제3</div>
+                                  <div>영양제4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="goodsImage">
+                                  <div>영양제5</div>
+                                  <div>영양제6</div>
+                                  <div>영양제7</div>
+                                  <div>영양제8</div>
+                                </div>
+                            </div>
+                            <footer>
+                                <div>
+                                  <ul>
+                                    <li class="icon">&#xf104</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li class="icon">&#xf105</li>
+                                  </ul>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+  </html>

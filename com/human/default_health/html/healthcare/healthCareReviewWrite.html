@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_리뷰작성</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        main{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+        }
+        main div{
+          width:800px;
+        }
+        .reviewGoods{
+          margin: 10px;
+          width:800px;
+          height: 50px;
+          display: flex;
+          justify-content: flex-start;
+          border: 1px solid black;
+        }
+        .reviewGoods div{
+          width: 100px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 300%;
+        }
+        .content{
+          border: 1px solid black;
+          margin: 10px;
+        }
+        .reviewTitle{
+          margin: 10px;
+          width:600px;
+          display: flex;
+          padding:30px;
+        }
+        .reviewTitle div input{
+          width:440px;
+          height: 40px;
+          margin:20px;
+          font-size: 24px;
+        }
+        .star{
+          width:200px; 
+          height:45px; 
+          margin:20px;
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900; 
+          color: #FFD43B;
+        }
+        .star option{
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900;
+          color: #FFD43B;
+        }
+        .reviewContent{
+          margin:0 50px 50px 50px;
+        }
+        .reviewContent textarea{
+          width:690px;
+          height: 350px;
+        }
+        .reviewButnContain{
+          width:690px;
+          margin: 50px;
+          display: flex;
+          text-align: center;
+        }
+        .reviewButnContain button{
+          margin: 10px;
+          width: 180px;
+          height: 60px;
+        }
+        .dropdown-content a li{
+          list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+      <div>
+        <div class="reviewGoods">
+          <div>단백질 보충제</div>
+          <div>></div>
+          <div>제품명</div>
+        </div>
+        <div class="content">
+          <div class="reviewTitle">
+            <div>
+              <input type="text" placeholder="제목:">
+            </div>
+            <div>
+            </div>
+            <div>
+              <select class="star">
+                <option class="star_1" selected="selected">&#xf005</option>
+                <option class="star_2">&#xf005&#xf005</option>
+                <option class="star_3">&#xf005&#xf005&#xf005</option>
+                <option class="star_4">&#xf005&#xf005&#xf005&#xf005</option>
+                <option class="star_5">&#xf005&#xf005&#xf005&#xf005&#xf005</option>
+              </select>
+            </div>
+          </div>
+          <div class="reviewContent">
+            <textarea type="content" maxlength="50">내용</textarea>
+          </div>
+          <div class="reviewButnContain">
+            <div>
+              <button>작성</button>
+            </div>
+            <div>
+              <button>취소</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

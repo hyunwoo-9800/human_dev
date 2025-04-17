@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_공통상품</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* 메인 화면 div  */
+         main{
+            display: flex;
+            justify-content: center;
+            }
+        .goods{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .goodsImage{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .goodsExplanation{
+            width: 700px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .reviewWrite{
+            width:1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .reviewWrite button{
+            font-size: 20px;
+            width:180px;
+        }
+        .customer{
+            width: 120px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .reviewRead{
+            margin: 50px;
+            width:1200px;
+            border: 1px solid black;
+        }
+        .reviewRead div{
+            display: flex;
+            margin: 20px;
+        }
+        .reviewCustomer{
+            width:200px;
+        }
+        .reviewContent{
+            width:700px;
+        }
+        .reviewStar{
+            width:150px;
+        }
+        footer div ul{
+            display: flex;
+            justify-content: center;
+        }
+        footer div ul li{
+            padding:20px;
+            cursor: pointer;
+        }
+        .icon{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight:900; 
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+   
+<body>
+    <main>
+        <div>
+            <div class="goods">
+                <div class="goodsImage">상품이미지</div>
+                <div class="goodsExplanation">구매 링크 & 설명</div>
+            </div>
+            <div class="reviewWrite">
+                <div>
+                    <button>리뷰 작성하기</button>
+                </div>
+            </div>
+
+            <div class="customer">
+                    <h2>고객 리뷰</h2>
+                </div>
+
+                <div class="reviewRead">
+                    <div>
+                        <div class="reviewCustomer">작성자</div>
+                        <div class="reviewContent">리뷰내용</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li class="icon">&#xf104</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="icon">&#xf105</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
