@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>헬스 커뮤니티</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/common/common.css">
-    <link rel="stylesheet" href="../css/common/header.css">
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>헬스 커뮤니티</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/common/common.css">
+        <link rel="stylesheet" href="../css/common/header.css">
+    </head>
 
-<body>
-    <div data-include-path="./includes/header.html"></div>
+    <body>
+        <div data-include-path="./includes/header.html"></div>
 
-    <div class='parent'>
-        <div class='child'>
-            <section id="bannerAd">
-                <div class="adSlide">
-                    <div class="imgSlide">
-                        <div class="slideInner">
-                            <div class="slider" role="group" aria-label="1/5">
-                                <img src="../images/aboutMe.JPG" alt="첫 번째 광고">
-                            </div>
-                            <div class="slider" role="group" aria-label="2/5">
-                                <img src="../images/portfolio.JPG" alt="두 번째 광고">
-                            </div>
-                            <div class="slider" role="group" aria-label="3/5">
-                                <img src="../images/aboutMe.JPG" alt="세 번째 광고">
-                            </div>
-                            <div class="slider" role="group" aria-label="4/5">
-                                <img src="../images/portfolio.JPG" alt="네 번째 광고">
-                            </div>
-                            <div class="slider" role="group" aria-label="5/5">
-                                <img src="../images/aboutMe.JPG" alt="다섯 번째 광고">
+        <div class='parent'>
+
+            <!-- 광고 영역 -->
+            <div class='child'>
+                <section id="bannerAd">
+                    <div class="adSlide">
+                        <div class="imgSlide">
+                            <div class="slideInner">
+                                <div class="slider" role="group" aria-label="1/5">
+                                    <img src="../images/aboutMe.JPG" alt="첫 번째 광고">
+                                </div>
+                                <div class="slider" role="group" aria-label="2/5">
+                                    <img src="../images/portfolio.JPG" alt="두 번째 광고">
+                                </div>
+                                <div class="slider" role="group" aria-label="3/5">
+                                    <img src="../images/aboutMe.JPG" alt="세 번째 광고">
+                                </div>
+                                <div class="slider" role="group" aria-label="4/5">
+                                    <img src="../images/portfolio.JPG" alt="네 번째 광고">
+                                </div>
+                                <div class="slider" role="group" aria-label="5/5">
+                                    <img src="../images/aboutMe.JPG" alt="다섯 번째 광고">
+                                </div>
                             </div>
                         </div>
+                        <div class="slideBtn">
+                            <a href="#" class="prev" role="button"><img src="../images/lefttriangle.png"></a>
+                            <a href="#" class="next" role="button"><img src="../images/righttriangle.png"></a>
+                        </div>
                     </div>
-                    <div class="slideBtn">
-                        <a href="#" class="prev" role="button"><img src="../images/lefttriangle.png"></a>
-                        <a href="#" class="next" role="button"><img src="../images/righttriangle.png"></a>
+                </section>
+            </div>
+            <!-- 광고 영역 끝 -->
+
+            <!-- 로그인 영역 -->
+            <div class='child'>
+                <section id="login">
+                    <div id="container">
+                        <button type="button" id="loginBtn" onclick="goLogin()">
+                            로 그 인
+                        </button>
+                        <pre></pre>
+                        <div class="searchId" onclick="searchId()">아이디 찾기</div>
+                        <div class="searchPw" onclick="searchPw()">비밀번호 찾기</div>
+                        <div class="goJoin" onclick="goJoin()">회원가입</div>
                     </div>
+                </section>
+            </div>
+            <!-- 로그인 영역 끝 -->
+        </div>
+
+        <!-- 삼대운동 영역 -->
+        <div class="mainExercise">
+            <div style="float: left; text-align: center; margin-right: 50px;">
+                <h2>데드리프트</h2>
+                <div>
+                    <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
                 </div>
-            </section>
-        </div>
+            </div>
 
-        <div class='child'>
-            <section id="login">
-                <div id="container">
-                    <button type="button" id="loginBtn" onclick="goLogin()">
-                        로 그 인
-                    </button>
-                    <pre></pre>
-                    <div class="searchId" onclick="searchId()">아이디 찾기</div>
-                    <div class="searchPw" onclick="searchPw()">비밀번호 찾기</div>
-                    <div class="goJoin" onclick="goJoin()">회원가입</div>
+            <div style="float: left; text-align: center; margin-right: 50px;">
+                <h2>스쿼트</h2>
+                <div>
+                    <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
                 </div>
-
-            </section>
-        </div>
-    </div>
-
-    <div class="mainExercise">
-        <div style="float: left; text-align: center; margin-right: 50px;">
-            <h2>데드리프트</h2>
-            <div>
-                <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
             </div>
-        </div>
 
-        <div style="float: left; text-align: center; margin-right: 50px;">
-            <h2>스쿼트</h2>
-            <div>
-                <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
+            <div style="float: left; text-align: center; margin-right: 50px;">
+                <h2>벤치프레스</h2>
+                <div>
+                    <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
+                </div>
             </div>
+
         </div>
+        <!-- 운동 영역 끝 -->
 
-        <div style="float: left; text-align: center; margin-right: 50px;">
-            <h2>벤치프레스</h2>
-            <div>
-                <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
-            </div>
-        </div>
-
-    </div>
-
-    <script src="../js/headerImport.js"></script>
-    <script src="../js/goPage.js"></script>
-    <script src="../js/index.js"></script>
-    
-</body>
+        <script src="../js/headerImport.js"></script>
+        <script src="../js/goPage.js"></script>
+        <script src="../js/index.js"></script>
+        
+    </body>
 
 </html>

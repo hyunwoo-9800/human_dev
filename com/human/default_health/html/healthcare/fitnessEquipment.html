@@ -5,102 +5,23 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../css/healthcare/fitnessEquipment.css">
     <link rel="stylesheet" href="../../css/common/header.css">
-    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
-    <title>fitnessEquipment</title>
-    <style>
- body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+    <!-- <link rel="stylesheet" href="../../css/common/common.css"> -->
+    
 
-        .search-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin: 30px auto;
-        }
-
-        .search-bar select,
-        .search-bar input[type="text"],
-        .search-bar button {
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        .search-bar button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-grid {
-            width: 30%;
-            /* 3열 그리드 */
-            padding: 1rem;
-            background-color: #f8f8f8;
-            border: 1px solid #ccc;
-            margin-bottom: 50px;
-            box-sizing: border-box;
-        }
-
-        .product-card {
-            text-align: center;
-        }
-
-        .product-card img {
-            width: 100%;
-            height: auto;
-            max-height: 200px;
-            object-fit: cover;
-        }
-
-        /* 페이지 처리 영역 */
-        div.paging {
-            width: 100%;
-            display: inline-flex;
-            align-items: center;
-            margin-top: 5px;
-            justify-content: center;
-        }
-
-        div.paging>i,
-        div.paging>div.pages {
-            margin: 0 10px;
-        }
-
-        div.paging>i,
-        div.paging>div.pages>span {
-            margin: 0 3px;
-            cursor: pointer;
-        }
-
-        span.active {
-            color: orangered;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>운동보조장비판매</title>
+ tips
 </head>
 
 <body>
 
     <div data-include-path="../includes/header.html"></div>
-    <div data-include-path="../includes/backgroundHeader.html"></div>
+
 
     <section id="excerciseSub">
         <div class="search-bar">
@@ -123,7 +44,8 @@
             <!-- 1행 -->
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="../../images/fitnessEquipment.jpg" alt="상품이미지1">
+                    
+                    <a href="www.naver.com"><img src="../../images/fitnessEquipment.jpg" alt="상품이미지1"></a>
                     <div class="info">
                         <h3>상품명 1</h3>
                         <p>상품 설명</p>
@@ -208,9 +130,10 @@
             <span>...(더보기)</span>
         </div>
 
-        <script src="../../js/headerImport.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="../../js/myPage.js"></script>
+        <i class="fa-solid fa-angle-right" id="next_page"></i>
+        <i class="fa-solid fa-angles-right" id="last_page"></i>       
+
 </body>
+<script src="../../js/headerImport.js"></script>
 
 </html>
