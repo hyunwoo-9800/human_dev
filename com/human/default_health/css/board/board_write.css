@@ -1,0 +1,8 @@
+.bButton {
+  padding: 6px 25px;
+  background-color: #0077cc;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}

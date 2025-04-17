@@ -1,0 +1,48 @@
+.header {
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: 0 auto;
+}
+
+#sform {
+  width: 800px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #fff;
+  /* background-color: red; */
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.userSearch input[type='search'] {
+  width: 600px;
+  margin: 0 10px 0 10px;
+}
+
+.sButton {
+  background-color: #0077cc;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  top: -10px;
+  left: -300px;
+}
+.Wbutton {
+  width: 100px;
+  height: 50px;
+  padding: 7px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  top: -60px;
+  left: -100px;
+}

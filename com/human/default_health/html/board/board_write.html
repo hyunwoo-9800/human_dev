@@ -4,6 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>board_write</title>
+
+    <link rel="stylesheet" href="../../css/common/header.css" />
+    <link rel="stylesheet" href="../../css/admin/admin.css" />
+    <link rel="stylesheet" href="../../css/common/common.css" />
+    <link rel="stylesheet" href="../../css/board/board_write.css" />
   </head>
-  <body></body>
+  <body>
+    <div data-include-path="../includes/header.html"></div>
+    <section>
+      <!-- 제목 -->
+      <h1>제목</h1>
+
+      <div>name</div>
+
+      <!-- 내용 -->
+      <textarea
+        id="text"
+        placeholder="내용을 입력하세요."
+        maxlength="1000"
+      ></textarea>
+
+      <!-- 첨부파일 -->
+      <p>첨부 파일</p>
+      <form action="#">
+        <label class="bButton" for="input_file">업로드</label>
+        <input type="file" id="input_file" style="display: none" />
+      </form>
+
+      <!-- 작성완료버튼 -->
+      <form action="#">
+        <input
+          class="bButton"
+          onclick="goList()"
+          type="button"
+          value="작성완료"
+        />
+      </form>
+    </section>
+
+    <!-- 페이징 --------------------------------------------------------------------------->
+    <div class="paging">
+      <i class="fa-solid fa-angles-left" id="first_page"></i>
+      <i class="fa-solid fa-angle-left" id="prev_page"></i>
+
+      <div class="pages">
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>...(더보기)</span>
+      </div>
+
+      <i class="fa-solid fa-angle-right" id="next_page"></i>
+      <i class="fa-solid fa-angles-right" id="last_page"></i>
+    </div>
+
+    <script src="../../js/board.js"></script>
+    <script src="../../js/headerImport.js"></script>
+  </body>
 </html>
