@@ -1,0 +1,82 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* ------------------------------------------- */
+
+/* main-text2 */
+
+.main_text2 {
+  width: 1920px;
+  height: 418px;
+  margin: auto;
+  /* padding: 30px; */
+  background-image: url(../images/image_footer/contact.png);
+  background-size: cover;
+  background-color: skyblue;
+}
+
+.main_text2 h1,
+.main_text2 div {
+  text-align: center;
+  color: #fff;
+}
+
+.main_text2 > ul {
+  display: flex;
+  padding-top: 138px;
+  /* background-color: blue; */
+}
+
+.main_text2 > ul > li {
+  flex: 1;
+}
+
+.more2 {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #fff;
+}
+
+.main_text2 > ul > li > .more2 {
+  margin: 15px auto;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+footer {
+  width: 1920px;
+  height: 244px;
+  display: flex;
+  /* padding: 30px; */
+  margin: auto;
+  background-color: rgb(57, 57, 57);
+}
+
+footer > div:first-child {
+  text-align: center;
+  flex: 4.5;
+  /* background-color: red; */
+  margin-top: 85px;
+}
+
+footer h1 {
+  color: #fff;
+}
+
+footer > div:last-child {
+  text-align: left;
+  flex: 7.5;
+  color: #fff;
+  /* background-color: blue; */
+  margin-top: 40px;
+  line-height: 40px;
+}
+/* ---------------------------------------- */
+/* animation */
