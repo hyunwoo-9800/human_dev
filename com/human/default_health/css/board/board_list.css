@@ -1,26 +1,202 @@
+/* 기본값 ---------------------*/
+body,
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+  line-height: 1.6;
+  height: 100%;
+}
+
 section {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   max-width: 1400px;
-  min-width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
 /* 제목 */
 p {
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   color: red;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .header1 {
-  background-color: darkkhaki;
+  background-color: #cfcdcd;
   max-width: 1400px;
   min-width: 1400px;
-  height: 200px;
+  height: 80px;
   margin: 0 auto;
+  padding-top: 20px;
+  /* padding-top: 50px; */
   display: flex;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .header1 div {
   width: 100%;
   text-align: center;
+}
+
+.nav1 {
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: end;
+  margin: 20px 0 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.nav1 div[onclick='goBoard()'] {
+  background-color: #f0f0f0;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+.nav1 a[href='#comment'] {
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 0 20px 0 0;
+  border-radius: 5px;
+}
+
+main {
+  /* background-color: #808080; */
+  padding: 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contents1 {
+  /* background-color: brown; */
+  width: 800px;
+  height: 400px;
+}
+
+.ad {
+  /* background-color: violet; */
+  width: 500px;
+}
+
+.sort {
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+#comment {
+  background-color: #f0f0f0;
+  margin: 0 20px 0 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.sort div:nth-of-type(2) {
+  background-color: #f0f0f0;
+  margin: 0 20px 0 0;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.sort div:nth-of-type(3) {
+  background-color: #f0f0f0;
+  margin: 0 20px 0 0;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.contents2 {
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#text {
+  margin-left: 20px;
+  width: 1000px;
+  height: 200px;
+  padding-left: 20px;
+  font-size: 20px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.lButton {
+  background-color: #0077cc;
+  width: 200px;
+  padding: 6px 25px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+  background-color: rgb(245, 246, 250);
+}
+/* 페이징 영역 -------------------------------*/
+.paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.paging i,
+.paging .pages span {
+  cursor: pointer;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #555;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.paging i:hover,
+.paging .pages span:hover {
+  background-color: #e0e0e0;
+}
+
+.paging .pages .active {
+  color: orangered;
+  font-weight: bold;
+  background-color: #ffe8dc;
+}
+
+.button {
+  /* width: 33em; */
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #808080;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #005fa3;
 }

@@ -6,8 +6,9 @@
     <title>board_list</title>
 
     <link rel="stylesheet" href="../../css/common/header.css" />
-    <link rel="stylesheet" href="../../css/admin/admin.css" />
-    <link rel="stylesheet" href="../../css/common/common.css" />
+    <!-- <link rel="stylesheet" href="../../css/index.css" /> -->
+    <!-- <link rel="stylesheet" href="../../css/admin/admin.css" /> -->
+    <!-- <link rel="stylesheet" href="../../css/common/common.css" /> -->
     <link rel="stylesheet" href="../../css/board/board_list.css" />
     <link
       rel="stylesheet"
@@ -22,8 +23,6 @@
     <div data-include-path="../includes/header.html"></div>
 
     <section>
-      <!-- 제목 -->
-      <p>[중요] 커뮤니티 이용 안내</p>
       <div class="header1">
         <div>관리자</div>
         <div>2025-01-01 00:00</div>
@@ -31,18 +30,46 @@
       </div>
 
       <!--신고버튼, 목록, 댓글 버튼 -->
-      <nav>
-        <button>
+      <nav class="nav1">
+        <button onclick="clickDeclaration()">
           <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018"></i>
         </button>
-        <div onclick="goBoard()">목록 버튼</div>
-        <div><a href="#comment"> 댓글 버튼</a></div>
+        <div onclick="goBoard()">목록</div>
+        <div><a href="#comment">댓글</a></div>
       </nav>
+
+      <!-- 제목 -->
+      <p>[중요] 커뮤니티 이용 안내</p>
 
       <!-- 내용 및 광고 -->
       <main>
-        <div>내용</div>
-        <div class="ad">광고 영역</div>
+        <div class="contents1">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+          voluptatem a nostrum hic aspernatur ut nam commodi repellat atque
+          pariatur ad veniam est, quaerat accusantium magnam autem esse. Ea,
+          saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          deserunt eos eaque laboriosam odio ullam iure inventore vel veritatis
+          debitis! Veritatis consequuntur nulla facilis amet, non porro magnam
+          repellat explicabo? Quos, recusandae officia laudantium omnis in
+          nihil? Non rerum mollitia in quo veritatis, suscipit rem repellat
+          nobis fugit eligendi odio error, aut ipsam. Vero incidunt velit sequi
+          magnam? Possimus, corporis? Alias fugiat eaque quo recusandae sunt
+          unde, velit aspernatur aut nemo quidem. Molestias quasi magni,
+          nesciunt id asperiores nulla non officia nobis fugit delectus beatae
+          quas aliquid magnam doloribus consequatur?
+        </div>
+
+        <div class="ad">
+          <div class="slider" role="group" aria-label="1/5">
+            <a href="https://www.naver.com">
+              <img
+                src="../../images/myprofile.jpg"
+                alt="첫 번째 광고"
+                style="width: 100%; height: auto"
+              />
+            </a>
+          </div>
+        </div>
       </main>
 
       <!-- 댓글, 정렬 버튼 -->
@@ -50,49 +77,53 @@
         <div id="comment">댓글</div>
         <div>등록순</div>
         <div>최신순</div>
+
+        <button onclick="clickDeclaration()">
+          <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018"></i>
+        </button>
       </div>
 
-      <!-- 댓글 내용 -->
+      <!-- 댓글 내용, 신고버튼 -->
       <article>
-        <div>
+        <div class="contents2">
           <textarea
             id="text"
             placeholder="명예훼손, 개인정보 유출, 분쟁 유발, 허위사실 유포, 등의 글은 이용약관에 의해 제재는 물론 법률에 의해 처벌 받을 수 있습니다. 건전한 커뮤니티를 위해 자제 당부 드립니다."
             maxlength="200"
-          >
-          </textarea>
-          <!-- 댓글 신고 버튼 -->
-          <button>
-            <i class="fa-solid fa-bell fa-2xl" style="color: #ce0018"></i>
-          </button>
+          ></textarea>
+
+          <!-- 등록 버튼 -->
+          <form action="#">
+            <input
+              class="lButton"
+              onclick="goList()"
+              type="button"
+              value="등록"
+            />
+          </form>
+        </div>
+      </article>
+      <!-- 페이징 --------------------------------------------------------------------------->
+      <div class="paging">
+        <i class="fa-solid fa-angles-left" id="first_page"></i>
+        <i class="fa-solid fa-angle-left" id="prev_page"></i>
+
+        <div class="pages">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>...(더보기)</span>
         </div>
 
-        <!-- 등록 버튼 -->
-        <form action="#">
-          <input onclick="goList()" type="button" value="등록" />
-        </form>
-      </article>
-    </section>
-
-    <!-- 페이징 --------------------------------------------------------------------------->
-    <div class="paging">
-      <i class="fa-solid fa-angles-left" id="first_page"></i>
-      <i class="fa-solid fa-angle-left" id="prev_page"></i>
-
-      <div class="pages">
-        <span class="active">1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>...(더보기)</span>
+        <i class="fa-solid fa-angle-right" id="next_page"></i>
+        <i class="fa-solid fa-angles-right" id="last_page"></i>
       </div>
-
-      <i class="fa-solid fa-angle-right" id="next_page"></i>
-      <i class="fa-solid fa-angles-right" id="last_page"></i>
-    </div>
+    </section>
 
     <script src="../../js/board.js"></script>
     <script src="../../js/headerImport.js"></script>
+    <script src="../../js/rev.js"></script>
   </body>
 </html>
