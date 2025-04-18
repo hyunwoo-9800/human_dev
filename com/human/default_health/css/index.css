@@ -1,6 +1,6 @@
 /* slider */
 #bannerAd {
-    width: 750px;
+    width: 600px;
     height: 450px;
     margin-top: auto;
     margin-left: 100px;
@@ -126,6 +126,11 @@
     margin: 100px;
     width: 1400px;
     height: 450px;
-    /* border: solid black; */
+}
 
+.mainExercise img {
+    width: 350px;
+    height: 500px;
+    border-radius: 1rem;
+    margin-left: -1rem;
 }
