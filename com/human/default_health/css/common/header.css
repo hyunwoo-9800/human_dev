@@ -11,7 +11,6 @@ header {
     z-index: 1;
     width: 100%;
     padding: 1rem;
-    left: -10%;
 }
 
 header .headerContainer {
@@ -42,6 +41,7 @@ header button {
 
 header h1 button {
     position: relative;
+    left: 30px;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -78,7 +78,6 @@ a {
     line-height: 45px;
     margin: 0 auto;
     text-align: center;
-    left: -30%;
 }
 
 #menu > ul > li {
@@ -169,8 +168,4 @@ a {
     background-size: cover;
     background-attachment: fixed;
     height: 240px;
-}
-
-#button {
-    margin-right: 235px;
 }

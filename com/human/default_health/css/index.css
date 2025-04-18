@@ -9,9 +9,8 @@
 /* 이미지가 보이는 영역 */
 .imgSlide {
     position: relative;
-    top: 30%;
-    width: 450px;
-    height: 340px;
+    width: 750px;
+    height: 450px;
     overflow: hidden;
 }
 
@@ -26,8 +25,8 @@
 /*개별적인 이미지 (각각의 이미지 설정) */
 .slider {
     position: relative;
-    width: 450px;
-    height: 340px;
+    width: 750px;
+    height: 450px;
 }
 
 @media(max-width : 800px) {
@@ -109,6 +108,11 @@
 
 #loginBtn:hover {
     background-color: #005fa3;
+  }
+  
+
+#container {
+    text-align: center;
 }
 
 #container div {
@@ -123,10 +127,8 @@
 }
 
 .mainExercise img {
-    width: 70%;
-    max-width: 350px;
-    height: 300px;
-    max-height: 450px;
+    width: 350px;
+    height: 500px;
     border-radius: 1rem;
-    margin-left: 0;
+    margin-left: -1rem;
 }
