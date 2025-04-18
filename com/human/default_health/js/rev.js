@@ -7,6 +7,7 @@ function goMain() {
 function reg() {
     if (confirm("작성하시겠습니까?")) {
         alert("작성완료");
+        history.back();
     } else {
         alert("취소하였습니다.");
     }
