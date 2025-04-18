@@ -4,9 +4,9 @@
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #f9fafc;
     color: #333;
-    width: 100%;
+    width: 94%;
     justify-content: center;
-   
+    
 }
 
 /* 제품 이미지 & 구매 설명 */
@@ -16,6 +16,7 @@
     margin-bottom: 2rem;
     margin: 20px auto;
     max-width: 1440px;
+    width: 85%;
 }
 
 .product-image,
@@ -43,7 +44,7 @@
     transition: transform 0.2s ease;
 }
 
-.report-icon:hover .siteLink:hover{
+.report-icon:hover, .siteLink:hover{
     transform: scale(1.2);
 }
 
