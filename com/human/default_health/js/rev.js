@@ -12,7 +12,11 @@ function reg() {
         alert("취소하였습니다.");
     }
 }
-
+function clickDeclaration(){
+    if(confirm("신고하겠습니까?")){
+        alert("신고가 완료됬습니다.");
+    }
+}
 // 취소용
 function cancel() {
     history.back();
