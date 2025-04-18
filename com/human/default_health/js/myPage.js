@@ -144,6 +144,26 @@ function logOut() {
 function goMypage() {
   location.href = "../user/myPage.html";
 }
+
+// 운동법 페이지로
+function goEx() {
+  location.href = "../exercise/exMet.html";
+}
+
+// 운동장비 페이지로
+function goEq() {
+  location.href = "../healthcare/equipments.html";
+}
+
+// 보조식품 페이지로
+function goSup() {
+  location.href = "../healthcare/supplements.html";
+}
+
+// 게시판 페이지로
+function goBoard() {
+  location.href = "../board/board.html";
+}
   
 
   
