@@ -9,8 +9,9 @@
 /* 이미지가 보이는 영역 */
 .imgSlide {
     position: relative;
-    width: 750px;
-    height: 450px;
+    top: 30%;
+    width: 450px;
+    height: 340px;
     overflow: hidden;
 }
 
@@ -25,8 +26,8 @@
 /*개별적인 이미지 (각각의 이미지 설정) */
 .slider {
     position: relative;
-    width: 750px;
-    height: 450px;
+    width: 450px;
+    height: 340px;
 }
 
 @media(max-width : 800px) {
@@ -53,46 +54,44 @@
         display: block;
         color: black;
     }
-    
+
     .slideBtn a.prev {
         margin-top: -25px;
         margin-left: 370px;
     }
-    
+
     .slideBtn a.next {
         margin-top: -50px;
         margin-left: 370px;
     }
-    
+
 }
 
 .slideBtn a {
-    /* position: absolute; */
-    top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     text-align: center;
     line-height: 50px;
     transition: all 0.2s;
-    display: block;
+    /* display: block; */
     color: black;
-}
-
-.slideBtn a.prev {
-    margin-top: -25px;
-    margin-left: 300px;
-}
-
-.slideBtn a.next {
-    margin-top: -50px;
-    margin-left: 370px;
+    margin: 16.5%;
 }
 
 .parent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 240px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.child {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #loginBtn {
@@ -110,11 +109,6 @@
 
 #loginBtn:hover {
     background-color: #005fa3;
-  }
-  
-
-#container {
-    text-align: center;
 }
 
 #container div {
@@ -129,8 +123,10 @@
 }
 
 .mainExercise img {
-    width: 350px;
-    height: 500px;
+    width: 70%;
+    max-width: 350px;
+    height: 300px;
+    max-height: 450px;
     border-radius: 1rem;
-    margin-left: -1rem;
+    margin-left: 0;
 }
