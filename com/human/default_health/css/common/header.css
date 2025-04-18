@@ -41,7 +41,7 @@ header button {
 
 header h1 button {
     position: relative;
-    /* left: -0px; */
+    left: 30px;
     font-size: 3rem;
     font-weight: bold;
 }
