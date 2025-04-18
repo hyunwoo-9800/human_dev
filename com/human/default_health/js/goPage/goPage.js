@@ -49,3 +49,7 @@ function goSup() {
 function goBoard() {
     location.href = "../html/board/board.html";
 }
+//공통상품 페이지로
+function goProduct(){
+    location.href="../html/healthcare/product.html";
+}

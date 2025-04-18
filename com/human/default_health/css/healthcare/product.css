@@ -26,6 +26,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     background: white;
+    margin: 0 auto;
 }
 
 /* 섹션 제목 */
@@ -52,6 +53,7 @@
 .button-wrapper {
     text-align: right;
     margin-top: 1.5rem;
+    padding-right: 1%;
 }
 
 .write-review-btn {
@@ -101,4 +103,16 @@
 }
 td button {
     border-style: none;
+}
+.star {
+    padding: 10px;
+    font-size: 20px;
+    color: #FFD43B;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    cursor: pointer;
 }

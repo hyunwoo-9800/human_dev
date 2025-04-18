@@ -86,7 +86,9 @@ span.active {
 
 /* ===== BUTTON ===== */
 .button, #loginButton, #backBtn {
-    width: 20em;
+    /* 두줄추가 */
+    margin: 10% auto;
+    width: 90%;
     display: inline-block;
     padding: 0.6em 1.2em;
     margin-bottom: 1.9em;
@@ -97,4 +99,15 @@ span.active {
     cursor: pointer;
     transition: background-color 0.3s;
     text-align: center;
-  }
+}
+/* 추가 */
+.info div{
+    margin-top: 10%;
+}
+
+.info h3{
+    padding: 3%;
+}
+.info p{
+    padding: 2%;
+}
