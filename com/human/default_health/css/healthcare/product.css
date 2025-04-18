@@ -4,6 +4,9 @@
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #f9fafc;
     color: #333;
+    width: 100%;
+    justify-content: center;
+   
 }
 
 /* 제품 이미지 & 구매 설명 */
@@ -11,19 +14,17 @@
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1440px;
 }
 
 .product-image,
-.purchase-info {
+.purchase-info{
     flex: 1;
-    min-height: 150px;
+    min-height: 300px;
     border: 1px solid #ddd;
     border-radius: 10px;
     background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* 섹션 제목 */
@@ -42,7 +43,7 @@
     transition: transform 0.2s ease;
 }
 
-.report-icon:hover {
+.report-icon:hover .siteLink:hover{
     transform: scale(1.2);
 }
 
@@ -63,6 +64,40 @@
     transition: background-color 0.3s ease;
 }
 
-.write-review-btn:hover {
+.write-review-btn:hover .siteLink:hover{
     background-color: #005fa3;
+}
+
+.buttondiv{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.purchase-info h2{
+    margin: 10%;
+}
+
+.purchase-info {
+    font-size: 150%;
+    text-align: left;
+    position: relative;
+    left: 80px;
+    margin-bottom: 10px;
+}
+.purchase-info p{
+    margin-left: 10%;
+}
+.purchase-info button{
+    width:50%;
+    font-size: 24px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin: 5% auto;
+}
+td button {
+    border-style: none;
 }

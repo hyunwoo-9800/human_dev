@@ -23,7 +23,14 @@
             <div class="product-image">
                 <img src="../../images/Protein1.jpg" alt="">
             </div>
-            <div class="purchase-info">구매 링크 & 설명</div>
+            <div class="purchase-info">
+               <h2>밸런스 파워쉐이크 아이솔레이트 <br>초코맛</h2>
+               <p>동물성&식물성 단백질의 조합</p>
+               <p>단백질 28g = 달걀 4개 분량과 비슷한 단백질 함량!</p>
+               <p>네덜란드산 코코아 분말로 사용해 진한 초코우유맛</p>
+               <p>Non-GMO 대두로만 생산</p>
+               <p><button class="siteLink" onclick="siteLink()">구매 바로 가기 </button></p>
+            </div>
         </div>
 
         <h2 class="section-title">고객 리뷰</h2>
@@ -42,20 +49,29 @@
                     <td>작성자1</td>
                     <td>리뷰 내용</td>
                     <td>별점</td>
-                    <td><i class="fa fa-bell report-icon"></i></td>
+                    <td>
+                        <button>
+                            <i class="fa fa-bell report-icon"></i>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>작성자2</td>
                     <td>리뷰 내용</td>
                     <td>별점</td>
-                    <td><i class="fa fa-bell report-icon"></i></td>
+                    <td>
+                        <button>
+                            <i class="fa fa-bell report-icon"></i>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
-
+        <div class="buttondiv">
         <div class="button-wrapper">
             <button class="write-review-btn" onclick="regRiv();">리뷰 작성</button>
         </div>
+    </div>
     </div>
 
     <!-- 페이징 처리 영역 -->
@@ -79,7 +95,10 @@
 
         <script src="../../js/headerImport.js"></script>
         <script src="../../js/goPage/goPageHealth.js"></script>
-
+        <script>
+            const btndeclaration=document.querySelector("button");
+            btndeclaration.onc
+        </script>
 </body>
 
 </html>
