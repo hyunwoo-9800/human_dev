@@ -1,8 +1,9 @@
  /* 공통 설정 */
  body {
+    width: 95%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f6fa;
-    margin: 0;
+    margin: 2%;
     padding: 0;
     color: #333;
 }
@@ -19,7 +20,7 @@
 
 /* 탭 버튼 */
 .tabItem {
-    width: 100%;
+    width: 95%;
     height: 50px;
     line-height: 50px;
     font-size: 16px;

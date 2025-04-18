@@ -1,3 +1,8 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* slider */
 #bannerAd {
     width: 600px;
@@ -67,15 +72,25 @@
 }
 
 .slideBtn a {
+    top: 50%;
     transform: translateY(-50%);
-    /* width: 50px;
-    height: 50px; */
+    width: 50px;
+    height: 50px;
     text-align: center;
     line-height: 50px;
     transition: all 0.2s;
-    /* display: block; */
+    display: block;
     color: black;
-    margin: 16.5%;
+}
+
+.slideBtn a.prev {
+    margin-top: -10px;
+    margin-left: 100px;
+}
+
+.slideBtn a.next {
+    margin-top: -50px;
+    margin-left: 300px;
 }
 
 .parent {
